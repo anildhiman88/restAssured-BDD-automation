@@ -1,6 +1,11 @@
 # RestAssured Test Framework
 
 This is a sample test framework for REST APIs using RestAssured and Cucumber. It contains feature files and corresponding step definitions for testing the https://jsonplaceholder.typicode.com API.
+Tests Covered:
+- GET, POST, PUT, PATCH, DELETE Method covered with basic validation
+- Add Schema validation for GET Method
+- Improve loggers.
+- Cucumber Maven reporting added
 
 ## Prerequisites
 * Java 8 or higher
@@ -15,7 +20,7 @@ This is a sample test framework for REST APIs using RestAssured and Cucumber. It
 
 ## Project Structure
 
-![img.png](img.png)
+![img_3.png](img_3.png)
 
 * **src/main/java/org.example.restAssured.stepdefinitions**: Contains the step definitions for the Cucumber feature files.
 * **src/test/java/org.example.restAssured.runner**: Contains the test runner file.
@@ -37,7 +42,9 @@ For example, to exclude tests with the **tag @skip**, use the following code:
 
 ## Reporting
 
-After running the test suite, the test results can be viewed in the target/cucumber-reports directory. The directory contains an HTML report and a JSON report.
+After running the test suite, the test results can be viewed in the target/cucumber-html-reports directory. The directory contains an HTML report.
+
+![img_2.png](img_2.png)
 
 ## Troubleshooting
 
